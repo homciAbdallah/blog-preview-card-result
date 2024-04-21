@@ -1,0 +1,94 @@
+:root{
+--yellow-Primary: hsl(47, 88%, 63%);
+--white-Neutral: hsl(0, 0%, 100%);
+--grey-Neutral: hsl(0, 0%, 50%);
+--black-Neutral: hsl(0, 0%, 7%);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height: 100vh;
+  background-color:var(--yellow-Primary); 
+  font-family: "Figtree", sans-serif;
+  display: grid;
+   place-content:center;
+}
+
+.container{
+  max-width: 350px;
+  margin: 16px;
+  padding: 20px;
+  background-color: var(--white-Neutral);
+  border-radius: 16px;
+  outline: solid 1px var(--black-Neutral);
+  box-shadow: 8px 10px 1px 1px var(--black-Neutral);
+  position: relative;
+}
+ 
+.container:hover{
+  box-shadow: 15px 15px 1px 1px var(--black-Neutral);
+}
+
+ .svgImag img{
+ width: 100%;
+  border-radius: 16px;
+}
+
+
+button{
+  margin-top: 16px;
+  padding: 4px 10px;
+  font-weight: 800;
+  border: none;
+background:var(--yellow-Primary) ;
+border-radius: 5px;
+font-size: 12px;
+}
+h2 {
+  
+  margin-top: 1rem;
+}
+h2 a{
+  color:var(--black-Neutral);
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+h2 a:hover{
+  color:var(--yellow-Primary);
+}
+
+ p{
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.descreptin p{
+  color: var(--grey-Neutral);
+  font-size: 600;
+  margin: 10px 0px;
+  font-size: 1rem;
+  line-height:1.5
+}
+  .avatar{
+    display: flex;
+    margin-top: 1rem;
+
+  }
+  .avatar h5{
+    margin: auto 10px;
+  }
+  .avatar img{
+    width: 10%;
+  }
+  @media  (max-width: 375px){
+    h2 a{
+      font-size: 16px;
+    }
+    
+  }
